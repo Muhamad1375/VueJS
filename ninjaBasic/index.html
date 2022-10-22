@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Document</title>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <style>
+            .one{
+                  color: green;
+            }
+            .two{
+                  text-decoration: line-through;
+            }
+      </style>
+</head>
+<body>
+      <h1>Vue Basics</h1>
+      <div id="app">
+            <h2>{{ title }}</h2>
+            <p>{{ greet('evening') }}</p>
+            <a :href="url">Youtube</a>
+            <div v-bind:class="classes">Classes from instance</div>
+            <input type="text" :value="name">
+      </div>
+
+
+          <script src="app.js"></script>
+</body>
+</html>
